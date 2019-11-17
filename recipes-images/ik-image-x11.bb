@@ -63,7 +63,7 @@ IMAGE_INSTALL_append = " mc"
 
 # X11
 IMAGE_INSTALL_append = " packagegroup-core-x11-xserver packagegroup-core-x11-utils"
-IMAGE_INSTALL_append = " matchbox-wm xcb-util-wm xmodmap liberation-fonts"
+IMAGE_INSTALL_append = " matchbox-wm xcb-util-wm xmodmap"
 # IMAGE_INSTALL_append = " xcb-util xcb-util-keysyms xmodmap xcb-util-renderutil xcb-util-wm xcb-util-image"
 
 # Servers
