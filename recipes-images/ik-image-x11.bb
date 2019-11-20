@@ -60,6 +60,8 @@ IMAGE_INSTALL_append = " iftop"
 #IMAGE_INSTALL_append = " ntp gpsd"
 #IMAGE_INSTALL_append = " upower"
 IMAGE_INSTALL_append = " mc"
+IMAGE_INSTALL_append = " mtd-utils"
+IMAGE_INSTALL_append = " unzip"
 
 # X11
 IMAGE_INSTALL_append = " packagegroup-core-x11-xserver packagegroup-core-x11-utils"
@@ -76,7 +78,10 @@ IMAGE_INSTALL_append = " qtbase qtserialport qtmultimedia qtlocation quazip"
 
 # Multimedia
 IMAGE_INSTALL_append = " alsa-state alsa-utils"
-#IMAGE_INSTALL_append = " gstreamer1.0"
+IMAGE_INSTALL_append = " gstreamer1.0 gstreamer1.0-plugins-base"
+
+#Ofono
+#IMAGE_INSTALL_append = " ofono libqofono"
 
 # Fonts
 #IMAGE_INSTALL_append = " liberation-fonts"
