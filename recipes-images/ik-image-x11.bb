@@ -81,7 +81,10 @@ IMAGE_INSTALL_append = " alsa-state alsa-utils"
 IMAGE_INSTALL_append = " gstreamer1.0 gstreamer1.0-plugins-base"
 
 #Ofono
-#IMAGE_INSTALL_append = " ofono libqofono"
+IMAGE_INSTALL_append = " ofono libqofono"
+
+# Wireless Central Regulatory Domain Agent for Mikroelektronika
+IMAGE_INSTALL_append = " crda"
 
 # Fonts
 #IMAGE_INSTALL_append = " liberation-fonts"
