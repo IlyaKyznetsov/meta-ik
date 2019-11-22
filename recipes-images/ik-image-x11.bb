@@ -62,6 +62,7 @@ IMAGE_INSTALL_append = " iftop"
 IMAGE_INSTALL_append = " mc"
 IMAGE_INSTALL_append = " mtd-utils"
 IMAGE_INSTALL_append = " unzip"
+IMAGE_INSTALL_append = " binutils"
 
 # X11
 IMAGE_INSTALL_append = " packagegroup-core-x11-xserver packagegroup-core-x11-utils"
