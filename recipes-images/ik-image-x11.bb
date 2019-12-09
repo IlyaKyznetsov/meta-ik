@@ -83,7 +83,7 @@ IMAGE_INSTALL_append = " gstreamer1.0 gstreamer1.0-plugins-base"
 
 #Ofono
 IMAGE_INSTALL_append = " ofono libqofono"
-IMAGE_INSTALL_append = " connman libconnman-qt5"
+IMAGE_INSTALL_append = " connman connman-client libconnman-qt5"
 IMAGE_INSTALL_append = " usb-modeswitch usb-modeswitch-data"
 
 # Wireless Central Regulatory Domain Agent for Mikroelektronika
