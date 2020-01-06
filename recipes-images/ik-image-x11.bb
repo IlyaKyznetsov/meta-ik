@@ -61,8 +61,8 @@ IMAGE_INSTALL_append = " iftop"
 #IMAGE_INSTALL_append = " upower"
 IMAGE_INSTALL_append = " mc"
 IMAGE_INSTALL_append = " mtd-utils"
-IMAGE_INSTALL_append = " unzip"
-IMAGE_INSTALL_append = " binutils"
+#IMAGE_INSTALL_append = " unzip"
+#IMAGE_INSTALL_append = " binutils"
 
 # X11
 IMAGE_INSTALL_append = " packagegroup-core-x11-xserver packagegroup-core-x11-utils"
@@ -83,7 +83,7 @@ IMAGE_INSTALL_append = " gstreamer1.0 gstreamer1.0-plugins-base"
 
 #Ofono
 IMAGE_INSTALL_append = " ofono libqofono"
-IMAGE_INSTALL_append = " connman connman-client libconnman-qt5"
+#IMAGE_INSTALL_append = " connman connman-client libconnman-qt5"
 IMAGE_INSTALL_append = " usb-modeswitch usb-modeswitch-data"
 
 # Wireless Central Regulatory Domain Agent for Mikroelektronika
