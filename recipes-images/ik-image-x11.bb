@@ -52,7 +52,7 @@ IMAGE_INSTALL_append = " libpng freetype openssl"
 # Utilites
 IMAGE_INSTALL_append = " dbus"
 IMAGE_INSTALL_append = " bash"
-IMAGE_INSTALL_append = " wvdial"
+#IMAGE_INSTALL_append = " wvdial"
 IMAGE_INSTALL_append = " iftop"
 #IMAGE_INSTALL_append=" tslib tslib-calibrate"
 #IMAGE_INSTALL_append = " pointercal"
@@ -60,6 +60,9 @@ IMAGE_INSTALL_append = " iftop"
 #IMAGE_INSTALL_append = " ntp gpsd"
 #IMAGE_INSTALL_append = " upower"
 IMAGE_INSTALL_append = " mc"
+IMAGE_INSTALL_append = " mtd-utils"
+IMAGE_INSTALL_append = " unzip"
+IMAGE_INSTALL_append = " binutils"
 
 # X11
 IMAGE_INSTALL_append = " packagegroup-core-x11-xserver packagegroup-core-x11-utils"
@@ -76,7 +79,15 @@ IMAGE_INSTALL_append = " qtbase qtserialport qtmultimedia qtlocation quazip"
 
 # Multimedia
 IMAGE_INSTALL_append = " alsa-state alsa-utils"
-#IMAGE_INSTALL_append = " gstreamer1.0"
+IMAGE_INSTALL_append = " gstreamer1.0 gstreamer1.0-plugins-base"
+
+#Ofono
+IMAGE_INSTALL_append = " ofono libqofono"
+IMAGE_INSTALL_append = " connman connman-client libconnman-qt5"
+IMAGE_INSTALL_append = " usb-modeswitch usb-modeswitch-data"
+
+# Wireless Central Regulatory Domain Agent for Mikroelektronika
+IMAGE_INSTALL_append = " crda"
 
 # Fonts
 #IMAGE_INSTALL_append = " liberation-fonts"
