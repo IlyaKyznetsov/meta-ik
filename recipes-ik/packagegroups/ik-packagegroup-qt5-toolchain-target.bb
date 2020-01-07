@@ -1,3 +1,5 @@
+# Base copy from: meta-qt5/recipes-qt/packagegroups/
+
 # Copyright (C) 2014 O.S. Systems Software LTDA.
 
 DESCRIPTION = "Target packages for Qt5 SDK"
@@ -70,9 +72,6 @@ RDEPENDS_${PN} += " \
     qtmultimedia-plugins \
     ${@bb.utils.contains('DISTRO_FEATURES', 'opengl', 'qtmultimedia-qmlplugins', '', d)} \
     qttranslations-qtmultimedia \
-    qtscript-dev \
-    qtscript-mkspecs \
-    qttranslations-qtscript \
     qtsensors-dev \
     qtsensors-mkspecs \
     qtsensors-plugins \
