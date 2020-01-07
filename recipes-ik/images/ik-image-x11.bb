@@ -53,7 +53,7 @@ IMAGE_INSTALL_append = " libpng freetype openssl"
 IMAGE_INSTALL_append = " dbus"
 IMAGE_INSTALL_append = " bash"
 #IMAGE_INSTALL_append = " wvdial"
-IMAGE_INSTALL_append = " iftop"
+#IMAGE_INSTALL_append = " iftop"
 #IMAGE_INSTALL_append=" tslib tslib-calibrate"
 #IMAGE_INSTALL_append = " pointercal"
 #IMAGE_INSTALL_append = " networkmanager modemmanager"
@@ -97,5 +97,5 @@ EXTRA_USERS_PARAMS = "usermod -p `openssl passwd ${ROOT_PASSWORD}` root;"
 inherit extrausers
 
 inherit populate_sdk_qt5_base
-TOOLCHAIN_HOST_TASK_append = " ik-nativesdk-packagegroup-qt5-toolchain-host"
+TOOLCHAIN_HOST_TASK_append = " nativesdk-packagegroup-qt5-toolchain-host"
 TOOLCHAIN_TARGET_TASK_append = " ik-packagegroup-qt5-toolchain-target"
