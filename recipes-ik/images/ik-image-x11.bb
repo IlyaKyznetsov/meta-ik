@@ -97,5 +97,5 @@ EXTRA_USERS_PARAMS = "usermod -p `openssl passwd ${ROOT_PASSWORD}` root;"
 inherit extrausers
 
 inherit populate_sdk_qt5_base
-TOOLCHAIN_HOST_TASK_append = " ik-image-nativesdk-packagegroup-qt5-toolchain-host"
-TOOLCHAIN_TARGET_TASK_append = " ik-image-packagegroup-qt5-toolchain-target"
+TOOLCHAIN_HOST_TASK_append = " ik-nativesdk-packagegroup-qt5-toolchain-host"
+TOOLCHAIN_TARGET_TASK_append = " ik-packagegroup-qt5-toolchain-target"
