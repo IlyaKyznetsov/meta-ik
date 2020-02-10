@@ -5,13 +5,13 @@ LICENSE = "MIT"
 FEATURE_PACKAGES_x11 = "packagegroup-core-x11"
 FEATURE_PACKAGES_x11-base = "packagegroup-core-x11-base"
 FEATURE_PACKAGES_tools-sdk = "packagegroup-core-sdk packagegroup-core-standalone-sdk-target"
-#FEATURE_PACKAGES_ssh-server-dropbear = "packagegroup-core-ssh-dropbear"
+FEATURE_PACKAGES_ssh-server-dropbear = "packagegroup-core-ssh-dropbear"
 FEATURE_PACKAGES_ssh-server-openssh = "packagegroup-core-ssh-openssh"
 #FEATURE_PACKAGES_hwcodecs = "${MACHINE_HWCODECS}"
 
 # IMAGE_FEATURES_REPLACES_foo = 'bar1 bar2'
 # Including image feature foo would replace the image features bar1 and bar2
-#IMAGE_FEATURES_REPLACES_ssh-server-openssh = "ssh-server-dropbear"
+IMAGE_FEATURES_REPLACES_ssh-server-openssh = "ssh-server-dropbear"
 
 # IMAGE_FEATURES_CONFLICTS_foo = 'bar1 bar2'
 # An error exception would be raised if both image features foo and bar1(or bar2) are included
