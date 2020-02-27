@@ -19,6 +19,8 @@ IMAGE_INSTALL ?= "${CORE_IMAGE_BASE_INSTALL}"
 
 inherit image
 
+IMAGE_FEATURES_append = " splash"
+
 IMAGE_FEATURES_append = " package-management"
 IMAGE_FEATURES_append = " hwcodecs"
 
@@ -37,6 +39,10 @@ IMAGE_INSTALL_append = " gstreamer1.0 gstreamer1.0-plugins-base"
 
 # Wireless Central Regulatory Domain Agent for Mikroelektronika
 IMAGE_INSTALL_append = " crda"
+
+IMAGE_INSTALL_append = " i2c-tools"
+
+IMAGE_INSTALL_append = " mc"
 
 ROOT_PASSWORD = "root1"
 EXTRA_USERS_PARAMS = "usermod -p `openssl passwd ${ROOT_PASSWORD}` root;"

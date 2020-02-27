@@ -22,6 +22,8 @@ IMAGE_INSTALL ?= "${CORE_IMAGE_BASE_INSTALL}"
 
 inherit image
 
+IMAGE_FEATURES_append = " splash"
+
 IMAGE_FEATURES_append = " package-management"
 IMAGE_FEATURES_append = " hwcodecs"
 
@@ -41,6 +43,8 @@ IMAGE_INSTALL_append = " gstreamer1.0 gstreamer1.0-plugins-base"
 # Wireless Central Regulatory Domain Agent for Mikroelektronika
 IMAGE_INSTALL_append = " crda"
 
+IMAGE_INSTALL_append = " i2c-tools"
+
 # rdepends on matchbox-wm
 REQUIRED_DISTRO_FEATURES = "x11"
 IMAGE_FEATURES_append = " x11"
@@ -48,6 +52,8 @@ IMAGE_FEATURES_append = " x11"
 IMAGE_INSTALL_append = " packagegroup-core-x11-xserver packagegroup-core-x11-utils"
 IMAGE_INSTALL_append = " matchbox-wm xcb-util-wm xmodmap"
 IMAGE_INSTALL_append = " dbus"
+
+IMAGE_INSTALL_append = " mc"
 
 ROOT_PASSWORD = "root1"
 EXTRA_USERS_PARAMS = "usermod -p `openssl passwd ${ROOT_PASSWORD}` root;"
