@@ -11,7 +11,6 @@ FEATURE_PACKAGES_x11 = "packagegroup-core-x11"
 FEATURE_PACKAGES_x11-base = "packagegroup-core-x11-base"
 
 #IMAGE_FEATURES_REPLACES_ssh-server-openssh = "ssh-server-dropbear"
-IMAGE_FEATURES_REPLACES_ssh-server-openssh = "ssh-server-openssh"
 
 MACHINE_HWCODECS ??= ""
 
@@ -26,7 +25,6 @@ inherit image
 IMAGE_FEATURES_append = " package-management"
 IMAGE_FEATURES_append = " hwcodecs"
 
-#IMAGE_FEATURES_append = " ssh-server-dropbear"
 IMAGE_FEATURES_append = " ssh-server-openssh"
 
 IMAGE_INSTALL_append = " mtd-utils"
