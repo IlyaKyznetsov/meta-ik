@@ -1,4 +1,4 @@
-SUMMARY = "Xilinx Image"
+SUMMARY = "Freescale Image Validator"
 
 LICENSE = "MIT"
 
@@ -31,10 +31,18 @@ IMAGE_INSTALL_append = " mtd-utils"
 IMAGE_INSTALL_append = " bash chkconfig tzdata localedef fontconfig iptables libpng freetype openssl"
 
 #Qt
-IMAGE_INSTALL_append = " qtbase qtserialport qtlocation quazip"
+IMAGE_INSTALL_append = " qtbase qtserialport qtlocation quazip qtmultimedia"
+
+# Multimedia
+IMAGE_INSTALL_append = " alsa-state alsa-utils"
+IMAGE_INSTALL_append = " gstreamer1.0 gstreamer1.0-plugins-base"
 
 # Wireless Central Regulatory Domain Agent for Mikroelektronika
 IMAGE_INSTALL_append = " crda"
+
+IMAGE_INSTALL_append = " proftpd"
+
+IMAGE_INSTALL_append=" tslib tslib-calibrate"
 
 ROOT_PASSWORD = "root1"
 EXTRA_USERS_PARAMS = "usermod -p `openssl passwd ${ROOT_PASSWORD}` root;"
@@ -42,4 +50,4 @@ inherit extrausers
 
 inherit populate_sdk_qt5_base
 TOOLCHAIN_HOST_TASK_append = " nativesdk-packagegroup-qt5-toolchain-host"
-TOOLCHAIN_TARGET_TASK_append = " ik-xilinx-packagegroup-qt5-toolchain-target"
+TOOLCHAIN_TARGET_TASK_append = " ik-freescale-packagegroup-qt5-toolchain-target"

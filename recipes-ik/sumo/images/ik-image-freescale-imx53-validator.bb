@@ -26,6 +26,8 @@ IMAGE_FEATURES_append = " hwcodecs"
 #IMAGE_FEATURES_append = " ssh-server-dropbear"
 IMAGE_FEATURES_append = " ssh-server-openssh"
 
+IMAGE_INSTALL_append = " mtd-utils"
+
 IMAGE_INSTALL_append = " bash chkconfig tzdata localedef fontconfig iptables libpng freetype openssl"
 
 #Qt
