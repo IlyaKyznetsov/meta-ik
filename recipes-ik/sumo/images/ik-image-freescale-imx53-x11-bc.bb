@@ -54,7 +54,7 @@ IMAGE_INSTALL_append = " matchbox-wm xcb-util-wm xmodmap"
 IMAGE_INSTALL_append = " dbus"
 
 # Utilites
-IMAGE_INSTALL_append = " ppp wvdial connman connman-client "
+IMAGE_INSTALL_append = " ppp wvdial connman connman-client"
 IMAGE_INSTALL_append = " usb-modeswitch usb-modeswitch-data"
 IMAGE_INSTALL_append = " proftpd"
 
