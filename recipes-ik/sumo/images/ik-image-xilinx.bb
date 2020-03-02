@@ -38,6 +38,12 @@ IMAGE_INSTALL_append = " crda"
 
 IMAGE_INSTALL_append = " i2c-tools"
 
+# Utilites
+IMAGE_INSTALL_append = " ppp wvdial connman connman-client"
+IMAGE_INSTALL_append = " usb-modeswitch usb-modeswitch-data"
+
+IMAGE_INSTALL_append = " liberation-fonts"
+
 IMAGE_INSTALL_append = " mc"
 
 ROOT_PASSWORD = "root1"
