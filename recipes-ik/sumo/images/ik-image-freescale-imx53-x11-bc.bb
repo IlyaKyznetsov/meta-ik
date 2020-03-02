@@ -58,7 +58,7 @@ IMAGE_INSTALL_append = " ppp wvdial connman connman-client ofono"
 IMAGE_INSTALL_append = " usb-modeswitch usb-modeswitch-data"
 IMAGE_INSTALL_append = " proftpd"
 
-IMAGE_INSTALL_append = " liberation-fonts xorg-minimal-fonts xorg-fonts-100dpi"
+IMAGE_INSTALL_append = " liberation-fonts xorg-minimal-fonts"
 
 IMAGE_INSTALL_append = " mc"
 
