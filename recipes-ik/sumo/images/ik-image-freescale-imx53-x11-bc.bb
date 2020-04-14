@@ -29,6 +29,8 @@ IMAGE_FEATURES_append = " hwcodecs"
 
 IMAGE_FEATURES_append = " ssh-server-openssh"
 
+IMAGE_INSTALL_append = " kbd"
+
 IMAGE_INSTALL_append = " mtd-utils"
 
 IMAGE_INSTALL_append = " bash chkconfig tzdata localedef fontconfig iptables libpng freetype openssl"
@@ -54,7 +56,8 @@ IMAGE_INSTALL_append = " matchbox-wm xcb-util-wm xmodmap"
 IMAGE_INSTALL_append = " dbus"
 
 # Utilites
-IMAGE_INSTALL_append = " ppp wvdial connman connman-client ofono"
+#IMAGE_INSTALL_append = " connman connman-client ofono"
+IMAGE_INSTALL_append = " ppp wvdial"
 IMAGE_INSTALL_append = " usb-modeswitch usb-modeswitch-data"
 IMAGE_INSTALL_append = " proftpd"
 
