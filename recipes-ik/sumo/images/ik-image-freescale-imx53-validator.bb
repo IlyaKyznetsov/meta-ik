@@ -19,7 +19,7 @@ IMAGE_INSTALL ?= "${CORE_IMAGE_BASE_INSTALL}"
 
 inherit image
 
-IMAGE_FEATURES_append = " splash"
+#IMAGE_FEATURES_append = " splash"
 
 IMAGE_FEATURES_append = " package-management"
 IMAGE_FEATURES_append = " hwcodecs"
@@ -29,18 +29,31 @@ IMAGE_FEATURES_append = " ssh-server-openssh"
 IMAGE_INSTALL_append = " mtd-utils"
 
 IMAGE_INSTALL_append = " bash chkconfig tzdata localedef fontconfig iptables libpng freetype openssl"
+IMAGE_INSTALL_append = " zip unzip"
+IMAGE_INSTALL_append = " curl rsync"
+IMAGE_INSTALL_append = " curlpp"
 
 #Qt
 IMAGE_INSTALL_append = " qtbase qtserialport qtlocation quazip qtmultimedia"
-
-# Multimedia
-IMAGE_INSTALL_append = " alsa-state alsa-utils"
-IMAGE_INSTALL_append = " gstreamer1.0 gstreamer1.0-plugins-base"
 
 # Wireless Central Regulatory Domain Agent for Mikroelektronika
 IMAGE_INSTALL_append = " crda"
 
 IMAGE_INSTALL_append = " i2c-tools"
+
+IMAGE_INSTALL_append = " liberation-fonts cantarell-fonts ttf-bitstream-vera ttf-gentium
+
+#IMAGE_INSTALL_append = " 
+
+
+# Multimedia
+IMAGE_INSTALL_append = " alsa-state alsa-utils"
+IMAGE_INSTALL_append = " gstreamer1.0 gstreamer1.0-plugins-base"
+
+# Utilites
+# IMAGE_INSTALL_append = " ppp wvdial"
+# IMAGE_INSTALL_append = " connman connman-client"
+# IMAGE_INSTALL_append = " usb-modeswitch usb-modeswitch-data"
 
 IMAGE_INSTALL_append = " mc"
 
