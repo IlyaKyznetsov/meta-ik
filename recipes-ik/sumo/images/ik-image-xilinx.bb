@@ -46,7 +46,7 @@ IMAGE_INSTALL_append = " i2c-tools"
 # IMAGE_INSTALL_append = " connman connman-client"
 # IMAGE_INSTALL_append = " usb-modeswitch usb-modeswitch-data"
 
-IMAGE_INSTALL_append = " liberation-fonts cantarell-fonts ttf-bitstream-vera ttf-gentium"
+IMAGE_INSTALL_append = " liberation-fonts"
 
 IMAGE_INSTALL_append = " mc"
 

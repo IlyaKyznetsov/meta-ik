@@ -41,7 +41,7 @@ IMAGE_INSTALL_append = " crda"
 
 IMAGE_INSTALL_append = " i2c-tools"
 
-IMAGE_INSTALL_append = " liberation-fonts cantarell-fonts ttf-bitstream-vera ttf-gentium"
+IMAGE_INSTALL_append = " liberation-fonts"
 
 # Multimedia
 IMAGE_INSTALL_append = " alsa-state alsa-utils"

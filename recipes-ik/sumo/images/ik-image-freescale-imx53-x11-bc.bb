@@ -22,7 +22,7 @@ IMAGE_INSTALL ?= "${CORE_IMAGE_BASE_INSTALL}"
 
 inherit image
 
-IMAGE_FEATURES_append = " splash"
+# IMAGE_FEATURES_append = " splash"
 
 IMAGE_FEATURES_append = " package-management"
 IMAGE_FEATURES_append = " hwcodecs"
@@ -34,6 +34,9 @@ IMAGE_INSTALL_append = " kbd"
 IMAGE_INSTALL_append = " mtd-utils"
 
 IMAGE_INSTALL_append = " bash chkconfig tzdata localedef fontconfig iptables libpng freetype openssl"
+IMAGE_INSTALL_append = " zip unzip"
+IMAGE_INSTALL_append = " curl rsync"
+IMAGE_INSTALL_append = " curlpp"
 
 #Qt
 IMAGE_INSTALL_append = " qtbase qtserialport qtlocation quazip qtmultimedia"
