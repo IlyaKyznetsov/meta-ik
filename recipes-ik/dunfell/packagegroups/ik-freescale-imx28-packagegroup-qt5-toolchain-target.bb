@@ -63,8 +63,6 @@ RDEPENDS_${PN} += " \
     qtmultimedia-plugins \
     ${@bb.utils.contains('DISTRO_FEATURES', 'opengl', 'qtmultimedia-qmlplugins', '', d)} \
     qttranslations-qtmultimedia \
-    qtscript-dev \
-    qtscript-mkspecs \
     qttranslations-qtscript \
     qtsensors-dev \
     qtsensors-mkspecs \
@@ -96,15 +94,11 @@ RDEPENDS_${PN} += " \
     qtxmlpatterns-dev \
     qtxmlpatterns-mkspecs \
     qttranslations-qtxmlpatterns \
-    qtquickcontrols2 \
-    qtquickcontrols2-dev \
-    qtquickcontrols2-mkspecs \
 "
 RDEPENDS_${PN}_remove_toolchain-clang_riscv32 = "qttools-dev qttools-mkspecs qttools-staticdev qttools-tools"
 RDEPENDS_${PN}_remove_toolchain-clang_riscv64 = "qttools-dev qttools-mkspecs qttools-staticdev qttools-tools"
 
 RRECOMMENDS_${PN} += " \
-    qtquickcontrols-qmlplugins \
     qttools-plugins \
 "
 
