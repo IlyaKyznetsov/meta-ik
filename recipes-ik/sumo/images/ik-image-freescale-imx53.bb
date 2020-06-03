@@ -56,6 +56,7 @@ IMAGE_INSTALL_append = " mc"
 
 IMAGE_INSTALL_append = " proftpd"
 IMAGE_INSTALL_append=" tslib tslib-calibrate"
+IMAGE_INSTALL_append=" console-tools"
 
 ROOT_PASSWORD = "root1"
 EXTRA_USERS_PARAMS = "usermod -p `openssl passwd ${ROOT_PASSWORD}` root;"
