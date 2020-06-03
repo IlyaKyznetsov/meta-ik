@@ -60,4 +60,4 @@ inherit extrausers
 
 inherit populate_sdk_qt5_base
 TOOLCHAIN_HOST_TASK_append = " nativesdk-packagegroup-qt5-toolchain-host"
-TOOLCHAIN_TARGET_TASK_append = " ik-freescale-packagegroup-qt5-toolchain-target"
+TOOLCHAIN_TARGET_TASK_append = " ik-freescale-imx28-packagegroup-qt5-toolchain-target"
