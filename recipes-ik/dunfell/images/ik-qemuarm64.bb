@@ -1,4 +1,4 @@
-SUMMARY = "Freescale Image Validator"
+SUMMARY = "Based on image"
 
 LICENSE = "MIT"
 
@@ -26,32 +26,19 @@ IMAGE_FEATURES_append = " hwcodecs"
 
 IMAGE_FEATURES_append = " ssh-server-openssh"
 
-IMAGE_INSTALL_append = " mtd-utils"
+IMAGE_INSTALL_append = " mtd-utils openssl"
 
 #IMAGE_INSTALL_append = " bash tzdata localedef fontconfig iptables libpng freetype openssl"
 #IMAGE_INSTALL_append = " zip unzip"
 #IMAGE_INSTALL_append = " curl rsync"
 #IMAGE_INSTALL_append = " curlpp"
 
-#Qt
-#IMAGE_INSTALL_append = " qtbase qtserialport qtlocation quazip qtmultimedia"
-IMAGE_INSTALL_append = " qtbase qtserialport"
-
-# Wireless Central Regulatory Domain Agent for Mikroelektronika
-#IMAGE_INSTALL_append = " crda"
+# QtCoreMinimal
+IMAGE_INSTALL_append = " qtbase qtserialport quazip"
 
 IMAGE_INSTALL_append = " i2c-tools"
 
-# Utilites
-# IMAGE_INSTALL_append = " ppp wvdial"
-# IMAGE_INSTALL_append = " connman connman-client"
-# IMAGE_INSTALL_append = " usb-modeswitch usb-modeswitch-data"
-
-#IMAGE_INSTALL_append = " liberation-fonts"
-
-# Multimedia
-#IMAGE_INSTALL_append = " alsa-state alsa-utils"
-#IMAGE_INSTALL_append = " gstreamer1.0 gstreamer1.0-plugins-base"
+# IMAGE_INSTALL_append = " swupdate"
 
 # IMAGE_INSTALL_append = " mc"
 
@@ -60,5 +47,5 @@ EXTRA_USERS_PARAMS = "usermod -p `openssl passwd ${ROOT_PASSWORD}` root;"
 inherit extrausers
 
 inherit populate_sdk_qt5_base
-TOOLCHAIN_HOST_TASK_append = " nativesdk-packagegroup-qt5-toolchain-host"
-TOOLCHAIN_TARGET_TASK_append = " ik-freescale-imx28-packagegroup-qt5-toolchain-target"
+# TOOLCHAIN_HOST_TASK_append = " nativesdk-packagegroup-qt5-toolchain-host"
+# TOOLCHAIN_TARGET_TASK_append = " ik-freescale-imx28-packagegroup-qt5-toolchain-target"
