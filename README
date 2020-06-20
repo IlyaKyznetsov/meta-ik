@@ -1,41 +1,20 @@
-This README file contains information on the contents of the meta-shtrih layer.
+Commands Help :
 
-Please see the corresponding sections below for details.
+# https://www.yoctoproject.org/docs/current/dev-manual/dev-manual.html#maintaining-build-output-quality
+INHERIT += "buildhistory"
+BUILDHISTORY_COMMIT = "1"
 
-Dependencies
-============
+# Regexp for remove comments (#awk '!/pattern/' file1 > file2) for e.log:
+bitbake -e ik-image-freescale-imx53 | awk '!/^#.*$/' > e.log.bb
 
-  URI: <first dependency>
-  branch: <branch name>
+# Viewing Package Information with oe-pkgdata-util
+https://www.yoctoproject.org/docs/current/dev-manual/dev-manual.html#oe-pkgdata-util
 
-  URI: <second dependency>
-  branch: <branch name>
-
-  .
-  .
-  .
-
-Patches
-=======
-
-Please submit any patches against the meta-shtrih layer to the xxxx mailing list (xxxx@zzzz.org)
-and cc: the maintainer:
-
-Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
-
-Table of Contents
-=================
-
-  I. Adding the meta-shtrih layer to your build
- II. Misc
+# You can use a different method to view dependency information by using the following command:
+bitbake -g -u taskexp recipename
 
 
-I. Adding the meta-shtrih layer to your build
-=================================================
+dot -v -P InputFile.dot -Tpng -o InputFile.png
 
-Run 'bitbake-layers add-layer meta-shtrih'
-
-II. Misc
-========
-
---- replace with specific information about the meta-shtrih layer ---
+# List packages for installed
+bitbake -g <image> && cat pn-buildlist | grep -ve "native" | sort | uniq
