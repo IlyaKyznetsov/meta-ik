@@ -16,17 +16,10 @@ RDEPENDS_${PN} += " \
     qtbase-plugins \
     qtbase-staticdev \
     qtbase-tools \
-    qtdeclarative-dev \
-    qtdeclarative-mkspecs \
-    ${@bb.utils.contains('DISTRO_FEATURES', 'opengl', 'qtdeclarative-qmlplugins', '', d)} \
-    qtdeclarative-tools \
-    qtdeclarative-staticdev \
     qtserialport-dev \
     qtserialport-mkspecs \
     qtserialbus-dev \
     qtserialbus-mkspecs \
-    qtxmlpatterns-dev \
-    qtxmlpatterns-mkspecs \
 "
 RDEPENDS_${PN}_remove_toolchain-clang_riscv32 = "qttools-dev qttools-mkspecs qttools-staticdev qttools-tools qttools-plugins"
 RDEPENDS_${PN}_remove_toolchain-clang_riscv64 = "qttools-dev qttools-mkspecs qttools-staticdev qttools-tools qttools-plugins"
