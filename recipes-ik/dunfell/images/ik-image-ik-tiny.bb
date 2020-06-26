@@ -5,8 +5,8 @@ FEATURE_PACKAGES_ssh-server-dropbear = "packagegroup-core-ssh-dropbear"
 FEATURE_PACKAGES_ssh-server-openssh = "packagegroup-core-ssh-openssh"
 FEATURE_PACKAGES_hwcodecs = "${MACHINE_HWCODECS}"
 
+IMAGE_FEATURES_REPLACES_ssh-server-openssh = "ssh-server-openssh"
 #IMAGE_FEATURES_REPLACES_ssh-server-openssh = "ssh-server-dropbear"
-IMAGE_FEATURES_REPLACES_ssh-server-openssh = "ssh-server-dropbear"
 
 MACHINE_HWCODECS ??= ""
 
@@ -21,8 +21,8 @@ inherit image
 IMAGE_FEATURES_append = " package-management"
 IMAGE_FEATURES_append = " hwcodecs"
 
-#IMAGE_FEATURES_append = " ssh-server-openssh"
-IMAGE_FEATURES_append = " ssh-server-dropbear"
+IMAGE_FEATURES_append = " ssh-server-openssh"
+#IMAGE_FEATURES_append = " ssh-server-dropbear"
 
 IMAGE_INSTALL_append = " mtd-utils openssl rsync update-rc.d"
 IMAGE_INSTALL_append = " iptables"
