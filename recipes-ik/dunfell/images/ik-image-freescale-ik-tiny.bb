@@ -1,1 +1,0 @@
-ik-image-ik-tiny.bb
