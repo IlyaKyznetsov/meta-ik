@@ -5,12 +5,12 @@ FEATURE_PACKAGES_ssh-server-dropbear = "packagegroup-core-ssh-dropbear"
 FEATURE_PACKAGES_ssh-server-openssh = "packagegroup-core-ssh-openssh"
 FEATURE_PACKAGES_hwcodecs = "${MACHINE_HWCODECS}"
 
-# Change ssh-server-openssh to ssh-server-dropbear
+IMAGE_FEATURES_REPLACES_ssh-server-openssh = "ssh-server-openssh"
 #IMAGE_FEATURES_REPLACES_ssh-server-openssh = "ssh-server-dropbear"
 
 MACHINE_HWCODECS ??= ""
 
-CORE_IMAGE_BASE_INSTALL = "packagegroup-core-boot-ik-tiny"
+CORE_IMAGE_BASE_INSTALL = "packagegroup-core-boot-ais"
 
 CORE_IMAGE_EXTRA_INSTALL ?= ""
 
@@ -25,7 +25,7 @@ IMAGE_FEATURES_append = " ssh-server-openssh"
 #IMAGE_FEATURES_append = " ssh-server-dropbear"
 
 IMAGE_INSTALL_append = " mtd-utils openssl rsync update-rc.d"
-IMAGE_INSTALL_append = " iptables"
+#IMAGE_INSTALL_append = " iptables"
 
 #Qt
 IMAGE_INSTALL_append = " qtbase quazip qtserialport"
@@ -36,4 +36,4 @@ inherit extrausers
 
 inherit populate_sdk_qt5_base
 TOOLCHAIN_HOST_TASK_append = " nativesdk-packagegroup-qt5-toolchain-host"
-TOOLCHAIN_TARGET_TASK_append = " packagegroup-qt5-toolchain-target-ik-tiny"
+TOOLCHAIN_TARGET_TASK_append = " packagegroup-qt5-toolchain-target-ais"

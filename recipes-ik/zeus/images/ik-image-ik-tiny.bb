@@ -5,7 +5,7 @@ FEATURE_PACKAGES_ssh-server-dropbear = "packagegroup-core-ssh-dropbear"
 FEATURE_PACKAGES_ssh-server-openssh = "packagegroup-core-ssh-openssh"
 FEATURE_PACKAGES_hwcodecs = "${MACHINE_HWCODECS}"
 
-IMAGE_FEATURES_REPLACES_ssh-server-openssh = "ssh-server-openssh"
+# Change ssh-server-openssh to ssh-server-dropbear
 #IMAGE_FEATURES_REPLACES_ssh-server-openssh = "ssh-server-dropbear"
 
 MACHINE_HWCODECS ??= ""
