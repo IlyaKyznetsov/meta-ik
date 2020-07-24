@@ -36,15 +36,17 @@ IMAGE_INSTALL_append = " crda"
 # for Transtelematica VM-18
 IMAGE_INSTALL_append = " i2c-tools"
 
-IMAGE_INSTALL_append = " bash"
+IMAGE_INSTALL_append = " iproute2 rng-tools dpkg ifupdown util-linux usbutils debianutils"
+IMAGE_INSTALL_append = " bash findutils procps gawk sed lsof grep"
+IMAGE_INSTALL_append = " tar p7zip zip unzip gzip bzip2"
+#IMAGE_INSTALL_append = " e2fsprogs"
 
 # Fonts Support
-IMAGE_INSTALL_append = " fontconfig freetype"
+IMAGE_INSTALL_append = " fontconfig freetype fontconfig liberation-fonts"
 
 # Images support
 IMAGE_INSTALL_append = " libpng"
-
-IMAGE_INSTALL_append = " mc"
+IMAGE_INSTALL_append = " mc vim-tiny"
 
 # 2---------------------------------------------------------------
 # Qt
@@ -75,4 +77,4 @@ inherit extrausers
 
 inherit populate_sdk_qt5_base
 TOOLCHAIN_HOST_TASK_append = " nativesdk-packagegroup-qt5-toolchain-host"
-TOOLCHAIN_TARGET_TASK_append = " packagegroup-qt5-toolchain-target"
+TOOLCHAIN_TARGET_TASK_append = " packagegroup-qt5-toolchain-target-void"

@@ -69,3 +69,7 @@ mxc0:12345:respawn:/bin/start_getty 115200 ttymxc0 vt102
 #!! Для imx28 ik-tiny чтобы получить конфиг сборки для Qt5.13
 bitbake -e qtbase | awk '!/^#.*$/' > e.qtbase.log.bb
 bitbake -e qtbase-native | awk '!/^#.*$/' > e.qtbase-native.log.bb
+
+
+
+bitbake -e image-device  | awk '!/^#.*$/' > image-device.log.bb

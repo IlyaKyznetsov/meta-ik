@@ -5,6 +5,10 @@ DISTRO_CONFIGS.path = conf/distro
 DISTRO_CONFIGS.files = $$files($$PWD/conf/distro/*)
 OTHER_FILES += $$DISTRO_CONFIGS.files
 
+MACHINE_CONFIGS.path = conf/machine
+MACHINE_CONFIGS.files = $$files($$PWD/conf/machine/*)
+OTHER_FILES += $$MACHINE_CONFIGS.files
+
 IMAGES_CONFIGS.path = recipes-ik/dunfell/images
 IMAGES_CONFIGS.files += $$files($$PWD/recipes-ik/dunfell/images/*)
 IMAGES_CONFIGS.files += $$files($$PWD/recipes-ik/zeus/images/*)
