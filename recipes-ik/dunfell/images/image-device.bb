@@ -36,17 +36,16 @@ IMAGE_INSTALL_append = " crda"
 # for Transtelematica VM-18
 IMAGE_INSTALL_append = " i2c-tools"
 
-IMAGE_INSTALL_append = " iproute2 rng-tools dpkg ifupdown util-linux usbutils debianutils"
-IMAGE_INSTALL_append = " bash findutils procps gawk sed lsof grep"
-IMAGE_INSTALL_append = " tar p7zip zip unzip gzip bzip2"
-#IMAGE_INSTALL_append = " e2fsprogs"
+IMAGE_INSTALL_append = " bash"
+IMAGE_INSTALL_append = " util-linux"
+IMAGE_INSTALL_append = " tzdata"
 
 # Fonts Support
-IMAGE_INSTALL_append = " fontconfig freetype fontconfig liberation-fonts"
+IMAGE_INSTALL_append = " fontconfig freetype liberation-fonts"
 
 # Images support
 IMAGE_INSTALL_append = " libpng"
-IMAGE_INSTALL_append = " mc vim-tiny"
+IMAGE_INSTALL_append = " mc"
 
 # 2---------------------------------------------------------------
 # Qt
